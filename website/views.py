@@ -3,11 +3,11 @@ from django.http import HttpResponse , JsonResponse
 
 
 def index_view(request):
-    return HttpResponse('<h1>PROJECT-ORION HOME PAGE</h1>')
+    return render(request , 'website/index.html')
 
 def about_view(request):
-    return HttpResponse('<h1>PROJECT-ORION ABOUT PAGE</h1>')
+    return render(request , 'website/about.html')
 
 def contact_view(request):
-    return HttpResponse('<h1>PROJECT-ORION CONTACT PAGE</h1>')
+    return render(request , 'website/contact.html')
 
